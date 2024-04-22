@@ -1,48 +1,83 @@
 <template>
-    <button type="button"
-        class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-        data-hs-overlay="#hs-basic-modal">
-        Open modal
-    </button>
+    <!-- Card Grid -->
+    <div
+        class="grid grid-cols-1 lg:grid-cols-3 items-center border border-neutral-700 divide-y lg:divide-y-0 lg:divide-x divide-neutral-700 rounded-xl">
+        <!-- Card -->
+        <a class="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+            href="#">
+            <div class="mb-5">
 
-    <div id="hs-basic-modal"
-        class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-0 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
-        <div class="sm:max-w-lg sm:w-full m-3 sm:mx-auto">
-            <div
-                class="flex flex-col bg-white border shadow-sm rounded-xl pointer-events-auto dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
-                <div class="flex justify-between items-center py-3 px-4 border-b dark:border-neutral-700">
-                    <h3 class="font-bold text-gray-800 dark:text-white">
-                        Modal title
-                    </h3>
-                    <button type="button"
-                        class="flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700"
-                        data-hs-overlay="#hs-basic-modal">
-                        <span class="sr-only">Close</span>
-                        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 6 6 18"></path>
-                            <path d="m6 6 12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div class="p-4 overflow-y-auto">
-                    <p class="mt-1 text-gray-800 dark:text-neutral-400">
-                        This is a wider card with supporting text below as a natural lead-in to additional content.
-                    </p>
-                </div>
-                <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-neutral-700">
-                    <button type="button"
-                        class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-                        data-hs-overlay="#hs-basic-modal">
-                        Close
-                    </button>
-                    <button type="button"
-                        class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
-                        Save changes
-                    </button>
+
+                <div class="mt-5">
+                    <p class="font-semibold text-5xl text-white">43%</p>
+                    <h3 class="mt-5 font-medium text-lg text-white">Enhancement in Customer Engagement</h3>
+                    <p class="mt-1 text-neutral-400">With the aim of optimizing customer interactions and boosting brand
+                        loyalty, the team at Preline leveraged Mailchimp's powerful tools and expertise to deliver
+                        exceptional results.</p>
                 </div>
             </div>
-        </div>
-    </div>
-</template>
+            <p class="mt-auto">
+                <span class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]'>
+        Case study
+      </span>
+    </p>
+  </a>
+  <!-- End Card -->
+  
+  <!-- Card -->
+  <a class=" group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl
+                    lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none
+                    before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent
+                    before:hover:via-transparent before:hover:to-[#ff0] before:via-80% before:-z-[1]
+                    before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl
+                    lg:before:last:rounded-bl-none before:opacity-0 " href=" #">
+                    <div class="mb-5">
+
+
+                        <div class="mt-5">
+                            <p class="font-semibold text-5xl text-white">20%</p>
+                            <h3 class="mt-5 font-medium text-lg text-white">Rise in E-commerce</h3>
+                            <p class="mt-1 text-neutral-400">In collaboration with Shopify, Preline embarked on a
+                                mission to revolutionize the e-commerce experience for a fictitious fashion brand,
+                                "StyleAura.".</p>
+                        </div>
+                    </div>
+                    <p class="mt-auto">
+                        <span class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]'>
+        Case study
+      </span>
+    </p>
+  </a>
+  <!-- End Card -->
+  
+  <!-- Card -->
+  <a class=" group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl
+                            lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none
+                            before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent
+                            before:hover:via-transparent before:hover:to-[#ff0] before:via-80% before:-z-[1]
+                            before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl
+                            lg:before:last:rounded-bl-none before:opacity-0 " href=" #">
+                            <div class="mb-5">
+
+
+                                <div class="mt-5">
+                                    <p class="font-semibold text-5xl text-white">12%</p>
+                                    <h3 class="mt-5 font-medium text-lg text-white">Streamlining Development</h3>
+                                    <p class="mt-1 text-neutral-400"> With the goal of accelerating project delivery and
+                                        enhancing collaboration among development teams, Preline leveraged GitLab's
+                                        comprehensive suite of tools and Preline's expertise in digital product
+                                        development.
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="mt-auto">
+                                <span class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]'>
+        Case study
+      </span>
+    </p>
+  </a>
+  <!-- End Card -->
+  </div>
+  <!-- End Card Grid -->
+  </div>
+  </template>

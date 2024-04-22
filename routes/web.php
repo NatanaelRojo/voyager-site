@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Inertia\Response;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,15 @@ use Inertia\Inertia;
 Route::get('test', function () {
     return Inertia::render('Modal');
 });
+
+Route::get('posts', function (): Response {
+    return Inertia::render('Post/Index');
+})->name('post.index');
+
+Route::get('post/{post}', [PostController::class, 'showDetail'])->name('post.detail');
+
+Route::get('posts/edit/{post}', [PostController::class, 'edit'])->name('post.edit');
+
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -40,3 +51,8 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__ . '/auth.php';
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
